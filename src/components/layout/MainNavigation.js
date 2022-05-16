@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import classes from "./MainNavigation.module.css"
-import logo from "./logo.png"
+import { Link } from 'react-router-dom';
+import classes from './MainNavigation.module.css';
+import logo from './logo.png';
 
 // ! Problem with the svg file.
 // ! SyntaxError: unknown: Namespace tags are not supported by default.
@@ -9,21 +9,25 @@ import logo from "./logo.png"
 // import logo from "./logo.svg"
 
 const MainNavigation = () => {
-    return ( 
-        <header className={classes.header}>
-            <div>
-                <p>
-                    <img src={logo} alt="logo"></img>
-                </p>
-            </div>
-            <nav>
-                <ul>
-                    <li><Link to='/'>Accueil</Link></li>
-                    <li><Link to='/a-propos'>À propos</Link></li>
-                </ul>
-            </nav>
-        </header>
-     );
-}
- 
+	return (
+		<header className={classes.header}>
+			<div>
+				<p>
+					<img src={logo} alt="logo"></img>
+				</p>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<Link to="/">Accueil</Link>
+					</li>
+					<li>
+						<Link to="/a-propos">À propos</Link>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	);
+};
+
 export default MainNavigation;
