@@ -1,3 +1,9 @@
+# Kasa
+
+Project carried out as part of the Front-End Web Development Career Path of OpenClassrooms.
+
+--- Original README content ---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
