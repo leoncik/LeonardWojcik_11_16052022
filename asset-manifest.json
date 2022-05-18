@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LeonardWojcik_11_16052022/static/css/main.e7ba4700.css",
+    "main.js": "/LeonardWojcik_11_16052022/static/js/main.56fd91ab.js",
+    "static/js/787.0ce615c0.chunk.js": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js",
+    "index.html": "/LeonardWojcik_11_16052022/index.html",
+    "main.e7ba4700.css.map": "/LeonardWojcik_11_16052022/static/css/main.e7ba4700.css.map",
+    "main.56fd91ab.js.map": "/LeonardWojcik_11_16052022/static/js/main.56fd91ab.js.map",
+    "787.0ce615c0.chunk.js.map": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7ba4700.css",
+    "static/js/main.56fd91ab.js"
+  ]
+}
