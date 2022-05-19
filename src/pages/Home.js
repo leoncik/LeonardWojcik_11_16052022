@@ -1,3 +1,4 @@
+// import LocationCard from '../components/layout/location/LocationCard';
 import MainBanner from '../components/layout/MainBanner';
 
 const MOCKED_DATA = [
@@ -587,6 +588,7 @@ const HomePage = () => {
 		<div>
 			<MainBanner />
 			<section className="location-cards">
+				{/* <LocationCard data={MOCKED_DATA} /> */}
 				{MOCKED_DATA.map((elt) => {
 					return (
 						<div
