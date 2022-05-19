@@ -1,6 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
+  "homepage": "https://leoncik.github.io/LeonardWojcik_11_16052022/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -17,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"

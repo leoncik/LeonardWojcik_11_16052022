@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import MainNavigation from './components/layout/MainNavigation';
+import Footer from './components/layout/Footer';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="/a-propos" element={<AboutPage />} />
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

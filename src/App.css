@@ -8,7 +8,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-.App {
+header,
+.main-banner,
+.location-cards {
 	text-align: center;
 	margin: 40px 100px;
 }
@@ -23,4 +25,37 @@ ul {
 
 li {
 	list-style: none;
+}
+
+/* ! Temporary style. Should be divided to components */
+.main-banner {
+	background: #b2b2b2;
+	height: 223px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+	margin-bottom: 43px;
+}
+
+.location-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.location-card {
+	width: 340px;
+	height: 340px;
+}
+
+/* Todo : use svg for logo to turn It white */
+
+footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 25px 0;
 }
