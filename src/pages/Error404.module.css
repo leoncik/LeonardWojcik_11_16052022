@@ -1,0 +1,24 @@
+.error404-container {
+	text-align: center;
+	color: rgba(255, 96, 96, 1);
+}
+
+.error404-container h1 {
+	font-size: 288px;
+	margin-top: 174px;
+	margin-bottom: 66px;
+}
+
+.error404-container p {
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 182px;
+}
+
+.error404-container a {
+	display: block;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 159px;
+	text-decoration: underline;
+}
