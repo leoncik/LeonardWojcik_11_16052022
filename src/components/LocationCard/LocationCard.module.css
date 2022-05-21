@@ -1,0 +1,18 @@
+/* Todo: add background gradient */
+
+.location-card {
+	cursor: pointer;
+	position: relative;
+	width: 340px;
+	height: 340px;
+	background-size: cover;
+}
+
+.location-card h2 {
+	text-align: left;
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	font-size: 18px;
+	color: white;
+}

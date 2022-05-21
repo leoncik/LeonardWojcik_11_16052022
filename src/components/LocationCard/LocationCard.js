@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
+import classes from './LocationCard.module.css';
 
 const LocationCard = ({ cover, title }) => (
-	<div className="location-card" style={{ background: `url(${cover})` }}>
+	<div
+		className={classes['location-card']}
+		style={{ backgroundImage: `url(${cover})` }}
+	>
 		<h2>{title}</h2>
 	</div>
 );

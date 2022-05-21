@@ -1,9 +1,20 @@
-const MainBanner = () => {
+import PropTypes from 'prop-types';
+import classes from './MainBanner.module.css';
+
+const MainBanner = (props) => {
 	return (
-		<div className="main-banner">
-			<h1>Chez vous, partout et ailleurs</h1>
+		<div
+			className={classes['main-banner']}
+			style={{ background: `url(${props.background})` }}
+		>
+			{props.title ? <h1>{props.title}</h1> : null}
 		</div>
 	);
 };
 
 export default MainBanner;
+
+MainBanner.propTypes = {
+	title: PropTypes.string,
+	background: PropTypes.string,
+};

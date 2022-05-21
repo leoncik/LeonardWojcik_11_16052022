@@ -1,0 +1,25 @@
+/* Todo : use svg for logo to turn It white */
+
+/* Can't use just footer ? */
+/* footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+} */
+.main-footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+}
+
+.main-footer svg {
+	width: 156px;
+}
+
+.main-footer path {
+	fill: white;
+}

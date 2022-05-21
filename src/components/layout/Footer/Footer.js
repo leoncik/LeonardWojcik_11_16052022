@@ -1,10 +1,11 @@
-import logo from './logo.png';
+import Logo from '../../Logo';
+import classes from './Footer.module.css';
 
 const Footer = () => {
 	return (
-		<footer>
+		<footer className={classes['main-footer']}>
 			<div>
-				<img src={logo}></img>
+				<Logo />
 			</div>
 			<p>© 2020 Kasa. All rights reserved</p>
 		</footer>
