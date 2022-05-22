@@ -13,7 +13,12 @@ const HomePage = () => {
 			/>
 			<section className="location-cards">
 				{MOCKED_DATA.map((elt) => (
-					<LocationCard key={elt.id} title={elt.title} cover={elt.cover} />
+					<LocationCard
+						key={elt.id}
+						title={elt.title}
+						cover={elt.cover}
+						id={elt.id}
+					/>
 				))}
 			</section>
 		</div>
