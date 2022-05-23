@@ -4,7 +4,6 @@
 	margin: 40px 100px;
 	background: #b2b2b2;
 	mix-blend-mode: darken;
-	color: white;
 	height: 223px;
 	border-radius: 25px;
 	display: flex;
@@ -12,4 +11,8 @@
 	justify-content: center;
 	margin-top: 25px;
 	margin-bottom: 43px;
+}
+
+.main-banner h1 {
+	color: white;
 }

@@ -1,0 +1,16 @@
+.location-tags {
+	display: flex;
+	gap: 10px;
+}
+
+.location-carousel,
+.location-primary-info,
+.location-primary-info {
+	margin: 0 100px;
+}
+
+.location-primary-info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}

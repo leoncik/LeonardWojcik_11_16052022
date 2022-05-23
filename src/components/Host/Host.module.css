@@ -1,0 +1,7 @@
+.host-profile {
+	display: flex;
+}
+
+.host-profile img {
+	border-radius: 50%;
+}

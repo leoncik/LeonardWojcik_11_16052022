@@ -7,11 +7,7 @@
 	width: 156px;
 }
 
-ul {
+.header ul {
 	display: flex;
 	gap: 57px;
-}
-
-a {
-	color: rgba(255, 96, 96, 1);
 }

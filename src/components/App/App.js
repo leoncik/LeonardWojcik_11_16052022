@@ -5,7 +5,7 @@ import AboutPage from '../../pages/About';
 import MainNavigation from '../layout/MainNavigation/MainNavigation';
 import Footer from '../layout/Footer/Footer';
 import Error404 from '../../pages/Error404';
-import LocationDetails from '../../pages/LocationDatails';
+import LocationDetails from '../../pages/LocationDetails';
 
 function App() {
 	return (
