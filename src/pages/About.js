@@ -1,10 +1,16 @@
+import Accordion from '../components/Accordion/Accordion';
 import MainBanner from '../components/MainBanner/MainBanner';
+import { ABOUT_PAGE_TEXT } from '../helpers/ABOUT_PAGE_TEXT';
 import aboutBanner from './about-banner.jpg';
+import classes from './About.module.css';
 
 const AboutPage = () => {
 	return (
-		<div>
+		<div className={classes['about-page']}>
 			<MainBanner background={aboutBanner} />
+			{ABOUT_PAGE_TEXT.map((elt, index) => (
+				<Accordion key={index} title={elt.title} content={elt.content} />
+			))}
 		</div>
 	);
 };

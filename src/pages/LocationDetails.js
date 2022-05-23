@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import Accordion from '../components/Accordion/Accordion';
 import Carousel from '../components/Carousel/Carousel';
 import Host from '../components/Host/Host';
 import Tag from '../components/Tag/Tag';
@@ -29,12 +30,15 @@ const LocationDetails = () => {
 					<Host host={currentLocation.host} />
 				</div>
 			</section>
-			<section className={classes['location-primary-info']}>
+			<section className={classes['location-secondary-info']}>
 				<div className="location-description">
-					<p>{currentLocation.description}</p>
+					<Accordion
+						title="Description"
+						content={currentLocation.description}
+					/>
 				</div>
 				<div className="location-equipments">
-					<p>{currentLocation.equipments}</p>
+					<Accordion title="Équipements" content={currentLocation.equipments} />
 				</div>
 			</section>
 			{console.log(currentLocation)}
