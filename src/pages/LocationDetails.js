@@ -1,7 +1,10 @@
+import styled from 'styled-components';
+
 import { useParams } from 'react-router-dom';
 import Accordion from '../components/Accordion/Accordion';
 import Carousel from '../components/Carousel/Carousel';
 import Host from '../components/Host/Host';
+import StarRate from '../components/StarRate';
 import Tag from '../components/Tag/Tag';
 import { MOCKED_DATA } from '../helpers/MOCKED_DATA';
 import Error404 from './Error404';
@@ -10,6 +13,12 @@ import classes from './LocationDetails.module.css';
 const LocationDetails = () => {
 	const { id } = useParams();
 	const currentLocation = MOCKED_DATA.find((location) => location.id === id);
+
+	const RatingContainer = styled.div`
+		> svg:nth-child(-n + ${currentLocation.rating}) > path {
+			fill: #ff6060;
+		}
+	`;
 
 	return currentLocation ? (
 		<main>
@@ -28,6 +37,13 @@ const LocationDetails = () => {
 				</div>
 				<div className="host-info">
 					<Host host={currentLocation.host} />
+					<RatingContainer>
+						<StarRate />
+						<StarRate />
+						<StarRate />
+						<StarRate />
+						<StarRate />
+					</RatingContainer>
 				</div>
 			</section>
 			<section className={classes['location-secondary-info']}>
