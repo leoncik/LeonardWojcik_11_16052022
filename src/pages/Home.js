@@ -1,6 +1,6 @@
 import LocationCard from '../components/LocationCard/LocationCard';
 import MainBanner from '../components/MainBanner/MainBanner';
-import homeBanner from './home-banner.jpg';
+import homeBanner from '../assets/images/home-banner.jpg';
 
 import { MOCKED_DATA } from '../helpers/MOCKED_DATA';
 

@@ -4,3 +4,13 @@
 	object-fit: cover;
 	border-radius: 25px;
 }
+
+.carousel-track {
+	position: relative;
+}
+
+.image-position {
+	position: absolute;
+	top: 0;
+	left: 50%;
+}

@@ -6,6 +6,7 @@
 	color: white;
 	border-radius: 5px;
 	list-style: none;
+	cursor: pointer;
 }
 
 .accordion-item p {

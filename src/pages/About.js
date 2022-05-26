@@ -1,7 +1,7 @@
 import Accordion from '../components/Accordion/Accordion';
 import MainBanner from '../components/MainBanner/MainBanner';
 import { ABOUT_PAGE_TEXT } from '../helpers/ABOUT_PAGE_TEXT';
-import aboutBanner from './about-banner.jpg';
+import aboutBanner from '../assets/images/about-banner.jpg';
 import classes from './About.module.css';
 
 const AboutPage = () => {
