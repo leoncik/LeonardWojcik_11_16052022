@@ -1,6 +1,9 @@
-const StarRate = () => {
+import PropTypes from 'prop-types';
+
+const StarRate = ({ cssClassName }) => {
 	return (
 		<svg
+			className={cssClassName}
 			width="30"
 			height="30"
 			viewBox="0 0 30 30"
@@ -16,3 +19,7 @@ const StarRate = () => {
 };
 
 export default StarRate;
+
+StarRate.propTypes = {
+	cssClassName: PropTypes.string,
+};

@@ -3,12 +3,12 @@ import classes from './Carousel.module.css';
 import NextImage from './NextImage';
 import PreviousImage from './PreviousImage';
 
-const Carousel = (props) => {
+const Carousel = ({ images }) => {
 	return (
 		<div className={classes['location-carousel']}>
 			<div className={classes['carousel-track']}>
 				<div className="carousel-item">
-					<img src={props.images[0]}></img>
+					<img src={images[0]}></img>
 				</div>
 			</div>
 			<div className="carousel-controls">
@@ -31,5 +31,5 @@ const Carousel = (props) => {
 export default Carousel;
 
 Carousel.propTypes = {
-	images: PropTypes.string,
+	images: PropTypes.arrayOf(PropTypes.string),
 };

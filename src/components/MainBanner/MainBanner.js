@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import classes from './MainBanner.module.css';
 
-const MainBanner = (props) => {
+const MainBanner = ({ title, background }) => {
 	return (
 		<div
 			className={classes['main-banner']}
-			style={{ background: `url(${props.background})` }}
+			style={{ background: `url(${background})` }}
 		>
-			{props.title ? <h1>{props.title}</h1> : null}
+			{title ? <h1>{title}</h1> : null}
 		</div>
 	);
 };

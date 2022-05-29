@@ -25,3 +25,7 @@
 .location-secondary-info > * {
 	width: 50%;
 }
+
+.rating-container .rating-active path {
+	fill: #ff6060;
+}

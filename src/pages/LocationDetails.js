@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import { useParams } from 'react-router-dom';
 import Accordion from '../components/Accordion/Accordion';
@@ -14,11 +14,12 @@ const LocationDetails = () => {
 	const { id } = useParams();
 	const currentLocation = MOCKED_DATA.find((location) => location.id === id);
 
-	const RatingContainer = styled.div`
-		> svg:nth-child(-n + ${currentLocation.rating}) > path {
-			fill: #ff6060;
-		}
-	`;
+	// If the use of "styled-components library was allowed, this code would style the StarRate components"
+	// const RatingContainer = styled.div`
+	// 	> svg:nth-child(-n + ${currentLocation.rating}) > path {
+	// 		fill: #ff6060;
+	// 	}
+	// `;
 
 	return currentLocation ? (
 		<main>
@@ -37,13 +38,33 @@ const LocationDetails = () => {
 				</div>
 				<div className="host-info">
 					<Host host={currentLocation.host} />
-					<RatingContainer>
-						<StarRate />
-						<StarRate />
-						<StarRate />
-						<StarRate />
-						<StarRate />
-					</RatingContainer>
+					<div className={classes['rating-container']}>
+						<StarRate
+							cssClassName={
+								currentLocation.rating > 0 ? classes['rating-active'] : null
+							}
+						/>
+						<StarRate
+							cssClassName={
+								currentLocation.rating > 1 ? classes['rating-active'] : null
+							}
+						/>
+						<StarRate
+							cssClassName={
+								currentLocation.rating > 2 ? classes['rating-active'] : null
+							}
+						/>
+						<StarRate
+							cssClassName={
+								currentLocation.rating > 3 ? classes['rating-active'] : null
+							}
+						/>
+						<StarRate
+							cssClassName={
+								currentLocation.rating > 4 ? classes['rating-active'] : null
+							}
+						/>
+					</div>
 				</div>
 			</section>
 			<section className={classes['location-secondary-info']}>
@@ -57,7 +78,6 @@ const LocationDetails = () => {
 					<Accordion title="Équipements" content={currentLocation.equipments} />
 				</div>
 			</section>
-			{console.log(currentLocation)}
 		</main>
 	) : (
 		<Error404 />
