@@ -1,3 +1,15 @@
+.location-carousel {
+	position: relative;
+}
+
+.carousel-track {
+	display: flex;
+}
+
+.carousel-item {
+	flex: 1 0 100%;
+}
+
 .location-carousel img {
 	width: 100%;
 	height: 415px;
@@ -5,12 +17,21 @@
 	border-radius: 25px;
 }
 
-.carousel-track {
-	position: relative;
-}
-
 .image-position {
 	position: absolute;
-	top: 0;
+	bottom: 15px;
 	left: 50%;
+	color: white;
+}
+
+.previous-image,
+.next-image {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.next-image {
+	right: 0;
 }
