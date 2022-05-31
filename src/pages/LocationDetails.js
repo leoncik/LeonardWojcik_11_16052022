@@ -69,13 +69,20 @@ const LocationDetails = () => {
 			</section>
 			<section className={classes['location-secondary-info']}>
 				<div className="location-description">
-					<Accordion
-						title="Description"
-						content={currentLocation.description}
-					/>
+					<dl className="accordion-group">
+						<Accordion
+							title="Description"
+							content={currentLocation.description}
+						/>
+					</dl>
 				</div>
 				<div className="location-equipments">
-					<Accordion title="Équipements" content={currentLocation.equipments} />
+					<dl className="accordion-group">
+						<Accordion
+							title="Équipements"
+							content={currentLocation.equipments}
+						/>
+					</dl>
 				</div>
 			</section>
 		</main>

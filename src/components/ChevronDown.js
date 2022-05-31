@@ -1,6 +1,9 @@
-const ChevronDown = () => {
+import PropTypes from 'prop-types';
+
+const ChevronDown = ({ cssClassName }) => {
 	return (
 		<svg
+			className={cssClassName}
 			width="25"
 			height="15"
 			viewBox="0 0 25 15"
@@ -16,3 +19,7 @@ const ChevronDown = () => {
 };
 
 export default ChevronDown;
+
+ChevronDown.propTypes = {
+	cssClassName: PropTypes.string,
+};

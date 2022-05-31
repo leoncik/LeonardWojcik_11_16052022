@@ -1,17 +1,50 @@
 /* Todo : fix empty white background between summary and p */
+/* Todo : improve responsivity of accordions. setContentHeight is causing problems when changing window size  */
 
-.accordion-item summary {
+.accordion-item {
+	margin-top: 33px;
+}
+
+.accordion-item button {
+	display: flex;
+	justify-content: space-between;
 	padding: 15px;
+	width: 100%;
+	text-align: left;
 	background-color: #ff6060;
 	color: white;
+	font-size: 1rem;
 	border-radius: 5px;
-	list-style: none;
+	border: none;
 	cursor: pointer;
+}
+
+.accordion-item dd {
+	opacity: 0;
+	height: 0px;
+	opacity: 0.3s ease-in-out;
+	height: 0.3s 0.3s ease-in-out;
+	transition: height 200ms ease-in-out, opacity 200ms ease-in-out;
+
+	margin-top: 0;
+	padding: 20px 27px 10px 18px;
+	background-color: #f6f6f6;
+	border-radius: 0 0 5px 5px;
 }
 
 .accordion-item p {
 	margin-top: 0;
-	padding: 36px 27px 10px 18px;
-	background-color: #f6f6f6;
-	border-radius: 0 0 5px 5px;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+.accordion-item .accordion-content_open {
+	opacity: 1;
+}
+
+.accordion-item svg {
+	transition: 200ms all;
+}
+.chevron-rotated {
+	transform: rotate(180deg);
 }
