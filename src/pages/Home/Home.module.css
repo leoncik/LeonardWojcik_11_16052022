@@ -11,3 +11,13 @@
 	text-align: center;
 	margin: var(--desktop-margin);
 }
+
+@media all and (max-width: 750px) {
+	.location-cards {
+		grid-template-columns: repeat(auto-fill, 100%);
+		background-color: white;
+		margin: var(--mobile-margin);
+		margin-top: 27px;
+		padding: 0;
+	}
+}

@@ -1,4 +1,4 @@
-/* Todo: add background gradient */
+@import '../../helpers/css-variables.css';
 
 .location-card {
 	cursor: pointer;
@@ -6,13 +6,40 @@
 	width: 340px;
 	height: 340px;
 	background-size: cover;
+	background-color: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
+	background-color: var(--primary-color);
+	border-radius: 10px;
+
+	transition: 200ms ease-in-out;
+}
+
+.location-card:hover {
+	transform: scale(1.04);
 }
 
 .location-card h2 {
+	margin: 0;
 	text-align: left;
 	position: absolute;
-	bottom: 12px;
 	left: 12px;
+	bottom: 12px;
 	font-size: 18px;
 	color: white;
+}
+
+.location-card a {
+	display: block;
+	height: inherit;
+}
+
+@media all and (max-width: 750px) {
+	.location-card {
+		width: 100%;
+		height: 255px;
+		background-position: center;
+	}
 }

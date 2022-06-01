@@ -16,3 +16,9 @@
 .main-footer path {
 	fill: white;
 }
+
+@media all and (max-width: 750px) {
+	.main-footer p {
+		font-size: 0.8rem;
+	}
+}

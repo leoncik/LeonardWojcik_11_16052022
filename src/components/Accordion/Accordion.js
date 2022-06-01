@@ -1,6 +1,6 @@
 import classes from './Accordion.module.css';
 import PropTypes from 'prop-types';
-import ChevronDown from '../ChevronDown';
+import ChevronDown from './ChevronDown';
 import { useState, useRef, useEffect } from 'react';
 
 const Accordion = ({ title, content }) => {

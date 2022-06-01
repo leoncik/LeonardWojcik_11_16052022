@@ -1,7 +1,28 @@
 .host-profile {
 	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.host-profile p {
+	text-align: right;
 }
 
 .host-profile img {
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
 	border-radius: 50%;
+	background-color: #c4c4c4;
+}
+
+@media all and (max-width: 750px) {
+	.host-profile img {
+		width: 32px;
+		height: 32px;
+	}
+
+	.host-profile p {
+		font-size: 0.7rem;
+	}
 }

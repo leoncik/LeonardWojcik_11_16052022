@@ -42,3 +42,33 @@
 .previous-image {
 	left: 23px;
 }
+
+.previous-image svg,
+.next-image svg {
+	transition: 150ms ease-in-out;
+}
+
+.previous-image:hover > svg,
+.next-image:hover > svg {
+	transform: scale(1.2);
+}
+
+.image-position {
+	text-shadow: 1px 1px 2px black;
+}
+
+@media all and (max-width: 750px) {
+	.location-carousel img {
+		height: 255px;
+	}
+
+	.previous-image > svg,
+	.next-image > svg {
+		transform: scale(0.6);
+	}
+
+	.previous-image:hover > svg,
+	.next-image:hover > svg {
+		transform: scale(0.8);
+	}
+}

@@ -3,3 +3,9 @@
 .about-page dl {
 	margin: var(--desktop-margin);
 }
+
+@media all and (max-width: 750px) {
+	.about-page dl {
+		margin: var(--mobile-margin);
+	}
+}

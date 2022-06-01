@@ -5,9 +5,11 @@ import classes from './Home.module.css';
 
 import { MOCKED_DATA } from '../../helpers/MOCKED_DATA';
 
+// Todo: if desktop version, set title to : "Chez vous, partout et ailleurs", else : "Chez vous,<br/> partout et ailleurs"
+
 const HomePage = () => {
 	return (
-		<div>
+		<main>
 			<MainBanner
 				title="Chez vous, partout et ailleurs"
 				background={homeBanner}
@@ -22,7 +24,7 @@ const HomePage = () => {
 					/>
 				))}
 			</section>
-		</div>
+		</main>
 	);
 };
 

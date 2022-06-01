@@ -5,7 +5,7 @@ const MainBanner = ({ title, background }) => {
 	return (
 		<div
 			className={classes['main-banner']}
-			style={{ background: `url(${background})` }}
+			style={{ backgroundImage: `url(${background})` }}
 		>
 			{title ? <h1>{title}</h1> : null}
 		</div>

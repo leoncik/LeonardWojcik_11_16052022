@@ -22,12 +22,12 @@ const LocationDetails = () => {
 	// `;
 
 	return currentLocation ? (
-		<main>
+		<main className={classes['location-details-main']}>
 			<section className={classes['location-carousel']}>
 				<Carousel images={currentLocation.pictures} />
 			</section>
 			<section className={classes['location-primary-info']}>
-				<div className="location-info">
+				<div className={classes['location-info']}>
 					<h1>{currentLocation.title}</h1>
 					<h2>{currentLocation.location}</h2>
 					<ul className={classes['location-tags']}>
@@ -36,7 +36,7 @@ const LocationDetails = () => {
 						))}
 					</ul>
 				</div>
-				<div className="host-info">
+				<div className={classes['host-info']}>
 					<Host host={currentLocation.host} />
 					<div className={classes['rating-container']}>
 						<StarRate

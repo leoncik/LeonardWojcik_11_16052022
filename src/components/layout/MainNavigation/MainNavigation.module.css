@@ -3,11 +3,12 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: var(--desktop-margin);
 }
 
 .header svg {
-	width: 156px;
+	width: 210px;
 }
 
 .header ul {
@@ -15,8 +16,35 @@
 	gap: 57px;
 }
 
+.header a:hover {
+	opacity: 0.8;
+}
+
 @media all and (max-width: 750px) {
+	.header {
+		margin: var(--mobile-margin);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 	.header a {
 		text-transform: uppercase;
+	}
+
+	.header svg {
+		width: 145px;
+	}
+}
+
+@media all and (max-width: 425px) {
+	.header {
+		flex-direction: column;
+	}
+	.header nav {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.header ul {
+		justify-content: space-between;
 	}
 }

@@ -6,9 +6,9 @@ const MainNavigation = () => {
 	return (
 		<header className={classes.header}>
 			<div>
-				<p>
+				<NavLink to="/">
 					<Logo />
-				</p>
+				</NavLink>
 			</div>
 			<nav>
 				<ul>

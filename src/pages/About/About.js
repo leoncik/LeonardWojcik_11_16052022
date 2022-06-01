@@ -6,14 +6,14 @@ import classes from './About.module.css';
 
 const AboutPage = () => {
 	return (
-		<div className={classes['about-page']}>
+		<main className={classes['about-page']}>
 			<MainBanner background={aboutBanner} />
 			<dl className="accordion-group">
 				{ABOUT_PAGE_TEXT.map((elt, index) => (
 					<Accordion key={index} title={elt.title} content={elt.content} />
 				))}
 			</dl>
-		</div>
+		</main>
 	);
 };
 
