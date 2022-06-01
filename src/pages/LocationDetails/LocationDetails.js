@@ -1,13 +1,13 @@
 // import styled from 'styled-components';
 
 import { useParams } from 'react-router-dom';
-import Accordion from '../components/Accordion/Accordion';
-import Carousel from '../components/Carousel/Carousel';
-import Host from '../components/Host/Host';
-import StarRate from '../components/StarRate';
-import Tag from '../components/Tag/Tag';
-import { MOCKED_DATA } from '../helpers/MOCKED_DATA';
-import Error404 from './Error404';
+import Accordion from '../../components/Accordion/Accordion';
+import Carousel from '../../components/Carousel/Carousel';
+import Host from '../../components/Host/Host';
+import StarRate from '../../components/StarRate';
+import Tag from '../../components/Tag/Tag';
+import { MOCKED_DATA } from '../../helpers/MOCKED_DATA';
+import Error404 from '../Error404/Error404';
 import classes from './LocationDetails.module.css';
 
 const LocationDetails = () => {

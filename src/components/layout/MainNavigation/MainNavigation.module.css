@@ -1,8 +1,9 @@
-/* Todo : underline active page */
+@import '../../../helpers/css-variables.css';
 
 .header {
 	display: flex;
 	justify-content: space-between;
+	margin: var(--desktop-margin);
 }
 
 .header svg {
@@ -12,4 +13,10 @@
 .header ul {
 	display: flex;
 	gap: 57px;
+}
+
+@media all and (max-width: 750px) {
+	.header a {
+		text-transform: uppercase;
+	}
 }

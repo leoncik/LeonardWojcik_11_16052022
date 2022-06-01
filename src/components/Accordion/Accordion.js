@@ -26,7 +26,7 @@ const Accordion = ({ title, content }) => {
 				>
 					{title}
 					<ChevronDown
-						cssClassName={isExpanded && classes['chevron-rotated']}
+						cssClassName={isExpanded ? classes['chevron-rotated'] : null}
 					/>
 				</button>
 			</dt>

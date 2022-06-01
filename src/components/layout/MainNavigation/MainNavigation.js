@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classes from './MainNavigation.module.css';
 import Logo from '../../Logo';
 
@@ -13,10 +13,24 @@ const MainNavigation = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to="/">Accueil</Link>
+						<NavLink
+							to="/"
+							style={({ isActive }) => ({
+								textDecoration: isActive ? 'underline' : 'none',
+							})}
+						>
+							Accueil
+						</NavLink>
 					</li>
 					<li>
-						<Link to="/a-propos">À propos</Link>
+						<NavLink
+							to="/a-propos"
+							style={({ isActive }) => ({
+								textDecoration: isActive ? 'underline' : 'none',
+							})}
+						>
+							À propos
+						</NavLink>
 					</li>
 				</ul>
 			</nav>

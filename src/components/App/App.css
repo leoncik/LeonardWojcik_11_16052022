@@ -1,3 +1,5 @@
+@import '../..//helpers/css-variables.css';
+
 *,
 *::before,
 *::after {
@@ -8,18 +10,12 @@ html {
 	scroll-behavior: smooth;
 }
 
-header,
-.location-cards {
-	text-align: center;
-	margin: 40px 100px;
-}
-
 h1,
 h2,
 p,
 a,
 li {
-	color: #ff6060;
+	color: var(--primary-color);
 }
 
 a {
@@ -36,14 +32,4 @@ li {
 
 dd {
 	margin-left: 0;
-}
-
-.location-cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 340px);
-	justify-content: center;
-	padding: 56px 50px;
-	gap: 20px;
-	background-color: #f6f6f6;
-	border-radius: 25px;
 }

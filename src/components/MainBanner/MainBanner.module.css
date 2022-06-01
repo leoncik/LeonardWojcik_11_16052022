@@ -1,11 +1,13 @@
 /* Todo : Add mix-blend-mode: darken; */
 
+@import '../../helpers/css-variables.css';
+
 .main-banner {
-	margin: 40px 100px;
+	margin: var(--desktop-margin);
 	background: #b2b2b2;
 	mix-blend-mode: darken;
 	height: 223px;
-	border-radius: 25px;
+	border-radius: var(--medium-radius);
 	display: flex;
 	align-items: center;
 	justify-content: center;

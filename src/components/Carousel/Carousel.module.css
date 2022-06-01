@@ -1,7 +1,9 @@
+@import '../../helpers/css-variables.css';
+
 .location-carousel {
 	position: relative;
 	overflow: hidden;
-	border-radius: 25px;
+	border-radius: var(--medium-radius);
 }
 
 .carousel-track {

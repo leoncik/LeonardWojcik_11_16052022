@@ -1,0 +1,13 @@
+@import '../../helpers/css-variables.css';
+
+.location-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 340px);
+	justify-content: center;
+	padding: 56px 50px;
+	gap: 20px;
+	background-color: #f6f6f6;
+	border-radius: var(--medium-radius);
+	text-align: center;
+	margin: var(--desktop-margin);
+}

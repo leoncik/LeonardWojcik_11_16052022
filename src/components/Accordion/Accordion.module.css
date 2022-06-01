@@ -1,8 +1,13 @@
-/* Todo : fix empty white background between summary and p */
-/* Todo : improve responsivity of accordions. setContentHeight is causing problems when changing window size  */
+/* Todo 1 : fix empty white background between summary and p */
+/* Todo 2 : improve responsivity of accordions. setContentHeight is causing problems when changing window size  */
+
+@import '../..//helpers/css-variables.css';
 
 .accordion-item {
 	margin-top: 33px;
+	/* Could be used to fix Todo 1 */
+	/* background-color: #f6f6f6;
+	border-radius: 5px; */
 }
 
 .accordion-item button {
@@ -11,7 +16,7 @@
 	padding: 15px;
 	width: 100%;
 	text-align: left;
-	background-color: #ff6060;
+	background-color: var(--primary-color);
 	color: white;
 	font-size: 1rem;
 	border-radius: 5px;
