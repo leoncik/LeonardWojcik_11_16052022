@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import classes from './Error404.module.css';
 
-// Todo : scroll to top after clicking to redirection link.
-
 const Error404 = () => {
 	return (
 		<div className={classes['error404-container']}>
