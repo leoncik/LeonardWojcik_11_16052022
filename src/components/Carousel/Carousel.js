@@ -67,12 +67,17 @@ const Carousel = ({ images }) => {
 	};
 
 	return (
-		<div ref={carousel} className={classes['location-carousel']}>
-			<div ref={carouselTrack} className={classes['carousel-track']}>
+		<section
+			ref={carousel}
+			className={classes['location-carousel']}
+			role="region"
+			aria-label="location carousel"
+		>
+			<ul ref={carouselTrack} className={classes['carousel-track']}>
 				{images.map((image, index) => (
-					<div key={index} className={classes['carousel-item']}>
+					<li key={index} className={classes['carousel-item']}>
 						<img src={image} />
-					</div>
+					</li>
 				))}
 				{/* Duplicate first image at the end in order to manage infinite animation */}
 				{images.length > 1 ? (
@@ -80,7 +85,7 @@ const Carousel = ({ images }) => {
 						<img src={images[0]} />
 					</div>
 				) : null}
-			</div>
+			</ul>
 			<div className="carousel-controls">
 				<div>
 					<span
@@ -99,7 +104,7 @@ const Carousel = ({ images }) => {
 					</span>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

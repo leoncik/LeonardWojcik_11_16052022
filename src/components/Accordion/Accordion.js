@@ -1,20 +1,31 @@
 import classes from './Accordion.module.css';
 import PropTypes from 'prop-types';
 import ChevronDown from './ChevronDown';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
 const Accordion = ({ title, content }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
-	const [contentHeight, setContentHeight] = useState();
+	// const [contentHeight, setContentHeight] = useState();
 
 	const heightRef = useRef();
 
-	useEffect(() => {
-		setContentHeight(`${heightRef.current.scrollHeight}px`);
-	}, []);
+	// useEffect(() => {
+	// 	setContentHeight(`${heightRef.current.scrollHeight}px`);
+	// }, []);
 
 	const toggleIsExpanded = () => {
 		setIsExpanded(!isExpanded);
+		if (isExpanded) {
+			heightRef.current.style.height = `${heightRef.current.scrollHeight}px`;
+			setTimeout(() => {
+				heightRef.current.style.height = '0px';
+			}, 1);
+		} else {
+			heightRef.current.style.height = `${heightRef.current.scrollHeight}px`;
+			setTimeout(() => {
+				heightRef.current.style.height = 'auto';
+			}, 200);
+		}
 	};
 
 	return (
@@ -33,9 +44,11 @@ const Accordion = ({ title, content }) => {
 			<dd
 				ref={heightRef}
 				className={
-					isExpanded ? classes['accordion-content_open'] : 'accordion-content'
+					isExpanded
+						? classes['accordion-content_open']
+						: classes['accordion-content']
 				}
-				style={{ height: isExpanded ? `${contentHeight}` : '0px' }}
+				// style={{ height: isExpanded ? `${contentHeight}` : '0px' }}
 				aria-hidden={isExpanded ? false : true}
 			>
 				{Array.isArray(content) && (
