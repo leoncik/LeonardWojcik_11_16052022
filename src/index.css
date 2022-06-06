@@ -1,5 +1,7 @@
 @import './helpers/css-variables.css';
 
+/* Todo : add fonts (self host) */
+
 *,
 *::before,
 *::after {
