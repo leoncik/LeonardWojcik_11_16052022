@@ -1,6 +1,6 @@
 /* Todo 1 : fix empty white background between summary and p (already done with pseudo-element but can probably be improved) */
 
-@import '../..//helpers/css-variables.css';
+@import '../../helpers/css-variables.css';
 
 .accordion-item {
 	margin-top: 33px;
