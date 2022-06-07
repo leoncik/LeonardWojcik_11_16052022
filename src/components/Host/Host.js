@@ -11,7 +11,7 @@ const Host = ({ host }) => {
 				{firstName} <br />
 				{lastName}
 			</p>
-			<img src={host.picture}></img>
+			<img src={host.picture} alt={`Photo de profil de ${host.name}`} />
 		</div>
 	);
 };

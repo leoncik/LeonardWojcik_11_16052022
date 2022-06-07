@@ -4,6 +4,7 @@ import classes from './Carousel.module.css';
 import NextImage from './NextImage';
 import PreviousImage from './PreviousImage';
 
+// Todo : add background to images (in case src can't be loaded)
 // ! Counter does not reset after page change
 let counter = 0;
 const Carousel = ({ images }) => {
@@ -102,8 +103,12 @@ const Carousel = ({ images }) => {
 				// Set src according to imageNumber
 				if (counter === totalOfImages - 1) {
 					newCarouselItemImage.src = images[0];
+					newCarouselItemImage.alt = `Photo de la location (image ${1} sur ${totalOfImages})`;
 				} else {
 					newCarouselItemImage.src = images[counter + 1];
+					newCarouselItemImage.alt = `Photo de la location (image ${
+						counter + 2
+					} sur ${totalOfImages})`;
 				}
 				newCarouselItem.appendChild(newCarouselItemImage);
 				newCarouselItem.style.left = `${(carouselItems.length - 1) * 100}%`;
@@ -123,10 +128,13 @@ const Carousel = ({ images }) => {
 				// Set src according to imageNumber
 				if (counter === -1) {
 					newCarouselItemImage.src = images[totalOfImages - 2];
+					newCarouselItemImage.alt = `Photo de la location (image ${counter} sur ${totalOfImages})`;
 				} else if (counter === 0) {
 					newCarouselItemImage.src = images[totalOfImages - 1];
+					newCarouselItemImage.alt = `Photo de la location (image ${totalOfImages} sur ${totalOfImages})`;
 				} else {
 					newCarouselItemImage.src = images[counter - 1];
+					newCarouselItemImage.alt = `Photo de la location (image ${counter} sur ${totalOfImages})`;
 				}
 				newCarouselItem.appendChild(newCarouselItemImage);
 				newCarouselItem.style.left = `${-1 * 100}%`;
@@ -170,31 +178,38 @@ const Carousel = ({ images }) => {
 			aria-label="location carousel"
 		>
 			<ul ref={carouselTrack} className={classes['carousel-track']}>
-				<li
-					className={`${classes['carousel-item']} `}
-					style={{ left: `${-1 * 100}%` }}
-				>
-					<img src={images[images.length - 1]} />
-				</li>
+				{images.length > 1 && (
+					<li
+						className={`${classes['carousel-item']} `}
+						style={{ left: `${-1 * 100}%` }}
+					>
+						<img
+							src={images[images.length - 1]}
+							alt={`Photo de la location (image ${totalOfImages} sur ${totalOfImages})`}
+						/>
+					</li>
+				)}
+
 				<li
 					className={`${classes['carousel-item']} `}
 					style={{ left: `${0 * 100}%` }}
 				>
-					<img src={images[0]} />
+					<img
+						src={images[0]}
+						alt={`Photo de la location (image 1 sur ${totalOfImages})`}
+					/>
 				</li>
-				<li
-					className={`${classes['carousel-item']} `}
-					style={{ left: `${1 * 100}%` }}
-				>
-					<img src={images[1]} />
-				</li>
-
-				{/* // Todo : Duplicate first image at the end if there are only two images to create animation */}
-				{images.length === 2 ? (
-					<div className={classes['carousel-item']}>
-						<img src={images[0]} />
-					</div>
-				) : null}
+				{images.length > 1 && (
+					<li
+						className={`${classes['carousel-item']} `}
+						style={{ left: `${1 * 100}%` }}
+					>
+						<img
+							src={images[1]}
+							alt={`Photo de la location (image 2 sur ${totalOfImages})`}
+						/>
+					</li>
+				)}
 			</ul>
 
 			{/* Display controls only if there are more than one image  */}
