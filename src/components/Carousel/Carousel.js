@@ -4,8 +4,8 @@ import classes from './Carousel.module.css';
 import NextImage from './NextImage';
 import PreviousImage from './PreviousImage';
 
-// Todo : add background to images (in case src can't be loaded)
 // ! Counter does not reset after page change
+// Todo : add aria hidden and keyboard controls
 let counter = 0;
 const Carousel = ({ images }) => {
 	const totalOfImages = images.length;

@@ -5,13 +5,15 @@ import classes from './Home.module.css';
 
 import { MOCKED_DATA } from '../../helpers/MOCKED_DATA';
 
-// Todo: if desktop version, set title to : "Chez vous, partout et ailleurs", else : "Chez vous,<br/> partout et ailleurs"
-
 const HomePage = () => {
 	return (
 		<main>
 			<MainBanner
-				title="Chez vous, partout et ailleurs"
+				title={
+					<h1>
+						<span>Chez vous,</span> <span>partout et ailleurs</span>
+					</h1>
+				}
 				background={homeBanner}
 			/>
 			<section className={classes['location-cards']}>

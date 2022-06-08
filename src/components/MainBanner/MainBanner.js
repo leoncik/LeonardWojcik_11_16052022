@@ -7,7 +7,9 @@ const MainBanner = ({ title, background }) => {
 			className={classes['main-banner']}
 			style={{ backgroundImage: `url(${background})` }}
 		>
-			{title ? <h1>{title}</h1> : null}
+			{title ? (
+				<div className={classes['banner-title-container']}>{title}</div>
+			) : null}
 		</div>
 	);
 };
