@@ -17,6 +17,6 @@ const MainBanner = ({ title, background }) => {
 export default MainBanner;
 
 MainBanner.propTypes = {
-	title: PropTypes.string,
+	title: PropTypes.element,
 	background: PropTypes.string,
 };
