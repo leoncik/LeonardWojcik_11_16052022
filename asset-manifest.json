@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/LeonardWojcik_11_16052022/static/css/main.1784a9a4.css",
-    "main.js": "/LeonardWojcik_11_16052022/static/js/main.f8dce8a1.js",
+    "main.css": "/LeonardWojcik_11_16052022/static/css/main.0c64be2e.css",
+    "main.js": "/LeonardWojcik_11_16052022/static/js/main.c23c33dd.js",
     "static/js/787.0ce615c0.chunk.js": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js",
     "static/media/about-banner.jpg": "/LeonardWojcik_11_16052022/static/media/about-banner.555b4b258a8027e4eacb.jpg",
     "static/media/home-banner.jpg": "/LeonardWojcik_11_16052022/static/media/home-banner.b4a91c1782d209c823af.jpg",
+    "static/media/montserrat-v24-latin-regular.svg": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.fb712f9dbd935ed0cd7c.svg",
+    "static/media/montserrat-v24-latin-regular.ttf": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.7ae1a6fd81dadb7e5f4f.ttf",
+    "static/media/montserrat-v24-latin-regular.woff": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.4523d055ce95b0cf0233.woff",
+    "static/media/montserrat-v24-latin-regular.eot": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.60cefdc1811db90b1a66.eot",
+    "static/media/montserrat-v24-latin-regular.woff2": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.f2d2ef7bf6fc24bddc8f.woff2",
+    "static/media/logo-white.svg": "/LeonardWojcik_11_16052022/static/media/logo-white.62c684e4ef171c898bef.svg",
     "index.html": "/LeonardWojcik_11_16052022/index.html",
-    "main.1784a9a4.css.map": "/LeonardWojcik_11_16052022/static/css/main.1784a9a4.css.map",
-    "main.f8dce8a1.js.map": "/LeonardWojcik_11_16052022/static/js/main.f8dce8a1.js.map",
+    "main.0c64be2e.css.map": "/LeonardWojcik_11_16052022/static/css/main.0c64be2e.css.map",
+    "main.c23c33dd.js.map": "/LeonardWojcik_11_16052022/static/js/main.c23c33dd.js.map",
     "787.0ce615c0.chunk.js.map": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1784a9a4.css",
-    "static/js/main.f8dce8a1.js"
+    "static/css/main.0c64be2e.css",
+    "static/js/main.c23c33dd.js"
   ]
 }
