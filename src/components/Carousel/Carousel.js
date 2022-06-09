@@ -4,15 +4,15 @@ import classes from './Carousel.module.css';
 import NextImage from './NextImage';
 import PreviousImage from './PreviousImage';
 
-// ! Counter does not reset after page change
 // Todo : add aria hidden and keyboard controls
-let counter = 0;
 const Carousel = ({ images }) => {
 	const totalOfImages = images.length;
 
 	const carousel = useRef();
 
 	let carouselTrack = useRef();
+
+	let counter = useRef(0);
 
 	let carouselItems;
 
@@ -26,10 +26,10 @@ const Carousel = ({ images }) => {
 			case 'toNext': {
 				if (imageNumber === totalOfImages) {
 					setImageNumber(1);
-					counter = 0;
+					counter.current = 0;
 				} else {
 					setImageNumber(imageNumber + 1);
-					counter++;
+					counter.current++;
 				}
 
 				break;
@@ -38,10 +38,10 @@ const Carousel = ({ images }) => {
 			case 'toPrevious': {
 				if (imageNumber === 1) {
 					setImageNumber(totalOfImages);
-					counter = totalOfImages - 1;
+					counter.current = totalOfImages - 1;
 				} else {
 					setImageNumber(imageNumber - 1);
-					counter--;
+					counter.current--;
 				}
 				break;
 			}
@@ -101,13 +101,13 @@ const Carousel = ({ images }) => {
 				newCarouselItem.className = classes['carousel-item'];
 				const newCarouselItemImage = document.createElement('img');
 				// Set src according to imageNumber
-				if (counter === totalOfImages - 1) {
+				if (counter.current === totalOfImages - 1) {
 					newCarouselItemImage.src = images[0];
 					newCarouselItemImage.alt = `Photo de la location (image ${1} sur ${totalOfImages})`;
 				} else {
-					newCarouselItemImage.src = images[counter + 1];
+					newCarouselItemImage.src = images[counter.current + 1];
 					newCarouselItemImage.alt = `Photo de la location (image ${
-						counter + 2
+						counter.current + 2
 					} sur ${totalOfImages})`;
 				}
 				newCarouselItem.appendChild(newCarouselItemImage);
@@ -126,15 +126,15 @@ const Carousel = ({ images }) => {
 				newCarouselItem.className = classes['carousel-item'];
 				const newCarouselItemImage = document.createElement('img');
 				// Set src according to imageNumber
-				if (counter === -1) {
+				if (counter.current === -1) {
 					newCarouselItemImage.src = images[totalOfImages - 2];
-					newCarouselItemImage.alt = `Photo de la location (image ${counter} sur ${totalOfImages})`;
-				} else if (counter === 0) {
+					newCarouselItemImage.alt = `Photo de la location (image ${counter.current} sur ${totalOfImages})`;
+				} else if (counter.current === 0) {
 					newCarouselItemImage.src = images[totalOfImages - 1];
 					newCarouselItemImage.alt = `Photo de la location (image ${totalOfImages} sur ${totalOfImages})`;
 				} else {
-					newCarouselItemImage.src = images[counter - 1];
-					newCarouselItemImage.alt = `Photo de la location (image ${counter} sur ${totalOfImages})`;
+					newCarouselItemImage.src = images[counter.current - 1];
+					newCarouselItemImage.alt = `Photo de la location (image ${counter.current} sur ${totalOfImages})`;
 				}
 				newCarouselItem.appendChild(newCarouselItemImage);
 				newCarouselItem.style.left = `${-1 * 100}%`;
@@ -152,7 +152,6 @@ const Carousel = ({ images }) => {
 	};
 
 	const handleNextImage = () => {
-		console.log(counter);
 		if (animate === true) {
 			setAnimate(false);
 			checkImageNumber('toNext');
