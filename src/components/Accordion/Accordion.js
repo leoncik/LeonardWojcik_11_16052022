@@ -5,13 +5,8 @@ import { useState, useRef } from 'react';
 
 const Accordion = ({ title, content }) => {
 	const [isExpanded, setIsExpanded] = useState(false);
-	// const [contentHeight, setContentHeight] = useState();
 
 	const heightRef = useRef();
-
-	// useEffect(() => {
-	// 	setContentHeight(`${heightRef.current.scrollHeight}px`);
-	// }, []);
 
 	const toggleIsExpanded = () => {
 		setIsExpanded(!isExpanded);
@@ -48,7 +43,6 @@ const Accordion = ({ title, content }) => {
 						? classes['accordion-content_open']
 						: classes['accordion-content']
 				}
-				// style={{ height: isExpanded ? `${contentHeight}` : '0px' }}
 				aria-hidden={isExpanded ? false : true}
 			>
 				{Array.isArray(content) && (
