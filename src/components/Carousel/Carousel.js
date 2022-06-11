@@ -4,7 +4,6 @@ import classes from './Carousel.module.css';
 import NextImage from './NextImage';
 import PreviousImage from './PreviousImage';
 
-// Todo : add aria hidden and keyboard controls
 const Carousel = ({ images }) => {
 	const totalOfImages = images.length;
 
@@ -54,7 +53,6 @@ const Carousel = ({ images }) => {
 	const moveImages = (direction) => {
 		switch (direction) {
 			case 'toNext': {
-				// Select all carousel items
 				carouselItems = carouselTrack.current.children;
 				for (let i = carouselItems.length; i--; ) {
 					carouselItems[i].style.left = `${(i - 2) * 100}%`;
@@ -66,12 +64,10 @@ const Carousel = ({ images }) => {
 						setAnimate(true);
 					}, animationDuration);
 				}
-
 				break;
 			}
 
 			case 'toPrevious': {
-				// Select all carousel items
 				carouselItems = carouselTrack.current.children;
 				for (let i = carouselItems.length; i--; ) {
 					carouselItems[i].style.left = `${i * 100}%`;
@@ -100,7 +96,7 @@ const Carousel = ({ images }) => {
 				const newCarouselItem = document.createElement('li');
 				newCarouselItem.className = classes['carousel-item'];
 				const newCarouselItemImage = document.createElement('img');
-				// Set src according to imageNumber
+				// Set src according to counter
 				if (counter.current === totalOfImages - 1) {
 					newCarouselItemImage.src = images[0];
 					newCarouselItemImage.alt = `Photo de la location (image ${1} sur ${totalOfImages})`;
@@ -125,7 +121,7 @@ const Carousel = ({ images }) => {
 				const newCarouselItem = document.createElement('li');
 				newCarouselItem.className = classes['carousel-item'];
 				const newCarouselItemImage = document.createElement('img');
-				// Set src according to imageNumber
+				// Set src according to counter
 				if (counter.current === -1) {
 					newCarouselItemImage.src = images[totalOfImages - 2];
 					newCarouselItemImage.alt = `Photo de la location (image ${counter.current} sur ${totalOfImages})`;
@@ -169,12 +165,32 @@ const Carousel = ({ images }) => {
 		}
 	};
 
+	const handleKeyDown = (e) => {
+		switch (e.key) {
+			case 'ArrowRight': {
+				handleNextImage();
+				break;
+			}
+
+			case 'ArrowLeft': {
+				handlePreviousImage();
+				break;
+			}
+
+			default:
+				break;
+		}
+	};
+
 	return (
 		<section
 			ref={carousel}
 			className={classes['location-carousel']}
 			role="region"
-			aria-label="location carousel"
+			aria-label="Photos de la location"
+			aria-roledescription="carousel"
+			tabIndex="0"
+			onKeyDown={handleKeyDown}
 		>
 			<ul ref={carouselTrack} className={classes['carousel-track']}>
 				{images.length > 1 && (
@@ -211,19 +227,28 @@ const Carousel = ({ images }) => {
 				)}
 			</ul>
 
-			{/* Display controls only if there are more than one image  */}
+			{/* Display controls only if there is more than one image  */}
 			{images.length > 1 ? (
 				<div className="carousel-controls">
 					<div>
-						<span
+						<button
 							onClick={handlePreviousImage}
 							className={classes['previous-image']}
+							aria-label="Image précédente"
+							type="button"
+							tabIndex="0"
 						>
 							<PreviousImage />
-						</span>
-						<span onClick={handleNextImage} className={classes['next-image']}>
+						</button>
+						<button
+							onClick={handleNextImage}
+							className={classes['next-image']}
+							aria-label="Image suivante"
+							type="button"
+							tabIndex="0"
+						>
 							<NextImage />
-						</span>
+						</button>
 					</div>
 					<div className={classes['image-position']}>
 						<span>

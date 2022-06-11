@@ -6,7 +6,7 @@ const MainNavigation = () => {
 	return (
 		<header className={classes.header}>
 			<div>
-				<NavLink to="/">
+				<NavLink className={classes['header-logo']} to="/">
 					<Logo />
 				</NavLink>
 			</div>

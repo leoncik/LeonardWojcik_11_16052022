@@ -5,6 +5,7 @@ const Logo = () => {
 			viewBox="0 0 210.32 68"
 			xmlns="http://www.w3.org/2000/svg"
 		>
+			<title>Logo Kasa</title>
 			<path
 				d="m20.074 34.648-11.234 11.488v16.12h-8.8401v-62.256h8.8401v34.834l33.519-34.834h10.129l-26.336 27.978 28.178 34.278h-10.314z"
 				fill="#ff6060"
