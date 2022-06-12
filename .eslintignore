@@ -5,7 +5,7 @@
 
 # testing
 /coverage
-App.test.js
+*.test.js
 
 # compiled output
 /dist

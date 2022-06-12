@@ -44,6 +44,7 @@ const Accordion = ({ title, content }) => {
 						: classes['accordion-content']
 				}
 				aria-hidden={isExpanded ? false : true}
+				data-testid="accordion-content"
 			>
 				{Array.isArray(content) && (
 					<ul>
