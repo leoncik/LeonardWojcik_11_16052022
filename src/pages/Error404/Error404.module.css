@@ -12,14 +12,14 @@
 }
 
 .error404-container p {
-	font-size: 36px;
+	font-size: var(--fs-desktop-larger);
 	margin-top: 0;
 	margin-bottom: 182px;
 }
 
 .error404-container a {
 	display: block;
-	font-size: 18px;
+	font-size: var(--fs-desktop-medium);
 	margin-top: 0;
 	margin-bottom: 159px;
 	text-decoration: underline;

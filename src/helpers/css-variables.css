@@ -6,4 +6,15 @@
 
 	--desktop-margin: 40px 100px;
 	--mobile-margin: 9px 21px;
+
+	--fs-desktop-small: 14px;
+	--fs-desktop-medium: 18px;
+	--fs-desktop-large: 24px;
+	--fs-desktop-larger: 36px;
+	--fs-desktop-xlarge: 48px;
+
+	--fs-mobile-small: 10px;
+	--fs-mobile-medium: 12px;
+	--fs-mobile-large: 18px;
+	--fs-mobile-xlarge: 24px;
 }

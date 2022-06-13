@@ -1,7 +1,16 @@
+@import '../../helpers/css-variables.css';
+
 .location-tag {
 	width: 115;
 	background-color: rgba(255, 96, 96, 1);
 	border-radius: 10px;
 	color: white;
 	padding: 3px 33px 2px 33px;
+	font-size: var(--fs-desktop-small);
+}
+
+@media all and (max-width: 750px) {
+	.location-tag {
+		font-size: var(--fs-mobile-small);
+	}
 }

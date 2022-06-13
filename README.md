@@ -15,9 +15,13 @@ Project carried out as part of the Front-End Web Development Career Path of Open
 
 ## Description
 
+### Scenario
+
+Kasa is a fictional web app for renting an apartment.
+
 ### Coding guidelines
 
-- The project must be bootstrapped with [Create React App](https://create-react-app.dev/)
+- The project must be bootstrapped with [Create React App](https://create-react-app.dev/).
 - The project should not use any external libraries.
 - There should be no error or warning in the console.
 

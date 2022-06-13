@@ -17,12 +17,13 @@
 }
 
 .location-primary-info h1 {
-	font-size: 1.8rem;
+	margin-top: 0;
+	font-size: var(--fs-desktop-larger);
 	margin-bottom: 0;
 }
 .location-primary-info h2 {
 	margin-top: 0;
-	font-size: 1.2rem;
+	font-size: var(--fs-desktop-medium);
 	margin-bottom: 23px;
 }
 
@@ -45,6 +46,11 @@
 
 .rating-container .rating-active path {
 	fill: var(--primary-color);
+}
+
+.location-secondary-info button,
+.location-secondary-info dd {
+	font-size: var(--fs-desktop-medium);
 }
 
 @media all and (max-width: 935px) {
@@ -80,6 +86,24 @@
 	}
 	.location-primary-info h1 {
 		margin-top: 0;
+		font-size: var(--fs-mobile-large);
+	}
+	.location-primary-info h2 {
+		font-size: var(--fs-mobile-medium);
+	}
+
+	.location-secondary-info {
+		margin: 0;
+		gap: 0;
+		flex-direction: column;
+	}
+	.location-secondary-info > * {
+		width: 100%;
+	}
+
+	.location-secondary-info button,
+	.location-secondary-info dd {
+		font-size: var(--fs-mobile-medium);
 	}
 
 	.rating-container svg {

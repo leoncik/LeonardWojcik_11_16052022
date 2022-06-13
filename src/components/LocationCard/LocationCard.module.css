@@ -60,7 +60,7 @@
 	position: absolute;
 	left: 12px;
 	bottom: 12px;
-	font-size: 18px;
+	font-size: var(--fs-desktop-medium);
 	color: white;
 	z-index: 3;
 }

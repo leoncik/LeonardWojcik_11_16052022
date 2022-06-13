@@ -1,6 +1,9 @@
+@import '../../helpers/css-variables.css';
+
 .host-profile {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	gap: 10px;
 }
 
@@ -23,6 +26,6 @@
 	}
 
 	.host-profile p {
-		font-size: 0.7rem;
+		font-size: var(--fs-mobile-medium);
 	}
 }
