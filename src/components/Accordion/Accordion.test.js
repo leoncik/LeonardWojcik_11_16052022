@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Accordion from './Accordion';
 
 const accordionTitle = 'Équipements';
@@ -13,16 +13,18 @@ describe('Testing accordions', () => {
 			</dl>,
 		);
 		const displayedAccordionContent = screen.getByTestId('accordion-content');
-		// console.log(displayedAccordionContent.style);
-		// expect(displayedAccordionContent).not.toBeVisible();
-		// expect(displayedAccordionContent).toHaveStyle('opacity: 0');
+		expect(displayedAccordionContent).toHaveAttribute('aria-hidden', 'true');
 	});
 
-	// it('should be open when clicked', () => {
-	//     render(<Accordion />);
-	//     const accordion = screen.getByTestId('accordion');
-	//     const accordionHeader = screen.getByTestId('accordion-header');
-	//     accordionHeader.click();
-	//     expect(accordion).toHaveClass('accordion-open');
-	// })
+	it('should be open when clicked', () => {
+		render(
+			<dl className="accordion-group">
+				<Accordion title={accordionTitle} content={accordionContent} />
+			</dl>,
+		);
+		const displayedAccordionContent = screen.getByTestId('accordion-content');
+		const AccordionToggler = screen.getByRole('button');
+		fireEvent.click(AccordionToggler);
+		expect(displayedAccordionContent).toHaveAttribute('aria-hidden', 'false');
+	});
 });

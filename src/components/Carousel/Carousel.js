@@ -237,6 +237,7 @@ const Carousel = ({ images }) => {
 							aria-label="Image précédente"
 							type="button"
 							tabIndex="0"
+							data-testid="previous-image-button"
 						>
 							<PreviousImage />
 						</button>
@@ -246,6 +247,7 @@ const Carousel = ({ images }) => {
 							aria-label="Image suivante"
 							type="button"
 							tabIndex="0"
+							data-testid="next-image-button"
 						>
 							<NextImage />
 						</button>

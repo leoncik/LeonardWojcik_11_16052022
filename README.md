@@ -32,6 +32,8 @@ Kasa is a fictional web app for renting an apartment.
 
 ![CarouselStructure](https://user-images.githubusercontent.com/85347446/173227523-8be13385-547d-4b68-84e3-ac9163b29cda.png)
 
+Note : If the carousel is provided with only one image, the controls are not displayed. If the carousel is provided with two images, It will be still working (the last image of the list will be duplicated in order to show the animation).
+
 ## Live demo
 
 Use this link to try the project : https://leoncik.github.io/LeonardWojcik_11_16052022/#/

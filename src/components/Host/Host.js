@@ -6,7 +6,7 @@ const Host = ({ host }) => {
 	const lastName = host.name.split(' ').splice(1).join(' ');
 
 	return (
-		<div className={classes['host-profile']}>
+		<div className={classes['host-profile']} data-testid="host-profile">
 			<p>
 				{firstName} <br />
 				{lastName}
