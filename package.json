@@ -17,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:prepush": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "yarn build",
