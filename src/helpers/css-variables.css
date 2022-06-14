@@ -7,14 +7,14 @@
 	--desktop-margin: 40px 100px;
 	--mobile-margin: 9px 21px;
 
-	--fs-desktop-small: 14px;
-	--fs-desktop-medium: 18px;
-	--fs-desktop-large: 24px;
-	--fs-desktop-larger: 36px;
-	--fs-desktop-xlarge: 48px;
+	--fs-desktop-small: 0.875rem;
+	--fs-desktop-medium: 1.125rem;
+	--fs-desktop-large: 1.5rem;
+	--fs-desktop-larger: 2.25rem;
+	--fs-desktop-xlarge: 3rem;
 
-	--fs-mobile-small: 10px;
-	--fs-mobile-medium: 12px;
-	--fs-mobile-large: 18px;
-	--fs-mobile-xlarge: 24px;
+	--fs-mobile-small: 0.625rem;
+	--fs-mobile-medium: 0.75rem;
+	--fs-mobile-large: 1.125rem;
+	--fs-mobile-xlarge: 1.5rem;
 }

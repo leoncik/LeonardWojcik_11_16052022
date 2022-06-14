@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 import classes from './LocationCard.module.css';
 
 const LocationCard = ({ cover, title, id }) => (
-	<div className={classes['location-card']}>
-		<Link to={`/locations/${id}`}>
-			<img src={cover} alt="Photo de la location" />
-			<h2>{title}</h2>
-		</Link>
-	</div>
+	<Link to={`/locations/${id}`} className={classes['location-card']}>
+		<img src={cover} alt="Photo de la location" />
+		<h2>{title}</h2>
+	</Link>
 );
 
 export default LocationCard;

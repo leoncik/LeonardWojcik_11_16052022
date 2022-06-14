@@ -1,6 +1,7 @@
 @import '../../helpers/css-variables.css';
 
 .location-card {
+	display: block;
 	cursor: pointer;
 	position: relative;
 	width: 340px;
@@ -18,7 +19,8 @@
 	transition: 200ms ease-in-out;
 }
 
-.location-card:hover {
+.location-card:hover,
+.location-card:focus {
 	transform: scale(1.04);
 }
 
@@ -63,11 +65,6 @@
 	font-size: var(--fs-desktop-medium);
 	color: white;
 	z-index: 3;
-}
-
-.location-card a {
-	display: block;
-	height: inherit;
 }
 
 @media all and (max-width: 750px) {

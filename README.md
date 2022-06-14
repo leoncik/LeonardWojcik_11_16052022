@@ -28,6 +28,8 @@ Kasa is a fictional web app for renting an apartment.
 ### Highlights
 
 - In order to ensure the code quality, I have used [Husky](https://typicode.github.io/husky), [ESLint](https://eslint.org/), [lint-staged](https://www.npmjs.com/package/lint-staged) and [Prettier](https://prettier.io/) to lint and format the code.
+- I have written and set up some unit and integration test. They will run before each "push" (thanks to Husky) in order to prevent regressions.
+- Some basic accessibility checks were performed on the project (test with a screen reader and ARIA labels were added where It was the most needed).
 - Because using external libraries were not allowed, the carousel was completely made from scratch. To make It performant and elegant (I wanted to add a sliding animation), I decided to display only 3 images at a time, and dynamically add the rest of them when the user clicks on the "next" or "previous" button. Here is a diagram showing how it works :
 
 ![CarouselStructure](https://user-images.githubusercontent.com/85347446/173227523-8be13385-547d-4b68-84e3-ac9163b29cda.png)

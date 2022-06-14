@@ -20,6 +20,9 @@
 }
 
 @media all and (max-width: 750px) {
+	.main-footer {
+		margin-top: 25px;
+	}
 	.main-footer p {
 		font-size: var(--fs-mobile-medium);
 	}
