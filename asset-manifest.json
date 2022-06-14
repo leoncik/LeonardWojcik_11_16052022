@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LeonardWojcik_11_16052022/static/css/main.fc832e85.css",
-    "main.js": "/LeonardWojcik_11_16052022/static/js/main.93f4c4db.js",
+    "main.css": "/LeonardWojcik_11_16052022/static/css/main.ee9218e5.css",
+    "main.js": "/LeonardWojcik_11_16052022/static/js/main.4aabe42b.js",
     "static/js/787.0ce615c0.chunk.js": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js",
     "static/media/about-banner.jpg": "/LeonardWojcik_11_16052022/static/media/about-banner.555b4b258a8027e4eacb.jpg",
     "static/media/home-banner.jpg": "/LeonardWojcik_11_16052022/static/media/home-banner.b4a91c1782d209c823af.jpg",
@@ -12,12 +12,12 @@
     "static/media/montserrat-v24-latin-regular.woff2": "/LeonardWojcik_11_16052022/static/media/montserrat-v24-latin-regular.f2d2ef7bf6fc24bddc8f.woff2",
     "static/media/logo-white.svg": "/LeonardWojcik_11_16052022/static/media/logo-white.62c684e4ef171c898bef.svg",
     "index.html": "/LeonardWojcik_11_16052022/index.html",
-    "main.fc832e85.css.map": "/LeonardWojcik_11_16052022/static/css/main.fc832e85.css.map",
-    "main.93f4c4db.js.map": "/LeonardWojcik_11_16052022/static/js/main.93f4c4db.js.map",
+    "main.ee9218e5.css.map": "/LeonardWojcik_11_16052022/static/css/main.ee9218e5.css.map",
+    "main.4aabe42b.js.map": "/LeonardWojcik_11_16052022/static/js/main.4aabe42b.js.map",
     "787.0ce615c0.chunk.js.map": "/LeonardWojcik_11_16052022/static/js/787.0ce615c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc832e85.css",
-    "static/js/main.93f4c4db.js"
+    "static/css/main.ee9218e5.css",
+    "static/js/main.4aabe42b.js"
   ]
 }
