@@ -13,7 +13,7 @@ describe('Testing accordions', () => {
 			</dl>,
 		);
 		const displayedAccordionContent = screen.getByTestId('accordion-content');
-		expect(displayedAccordionContent).toHaveAttribute('aria-hidden', 'true');
+		expect(displayedAccordionContent).toHaveAttribute('aria-hidden', 'false');
 	});
 
 	it('should be open when clicked', () => {
