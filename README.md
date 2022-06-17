@@ -27,8 +27,8 @@ Kasa is a fictional web app for renting an apartment.
 
 ### Highlights
 
-- In order to ensure the code quality, I have used [Husky](https://typicode.github.io/husky), [ESLint](https://eslint.org/), [lint-staged](https://www.npmjs.com/package/lint-staged) and [Prettier](https://prettier.io/) to lint and format the code.
-- I have written and set up some unit and integration test. They will run before each "push" (thanks to Husky) in order to prevent regressions.
+- In order to ensure the code quality, I have used [Husky](https://typicode.github.io/husky), [lint-staged](https://www.npmjs.com/package/lint-staged), [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to lint and format the code.
+- I have written and set up some unit and integration test. They will run before each "push" (through Husky) in order to prevent regressions.
 - Some basic accessibility checks were performed on the project (test with a screen reader and ARIA labels were added where It was the most needed).
 - Because using external libraries were not allowed, the carousel was completely made from scratch. To make It performant and elegant (I wanted to add a sliding animation), I decided to display only 3 images at a time, and dynamically add the rest of them when the user clicks on the "next" or "previous" button. Here is a diagram showing how it works :
 
@@ -42,13 +42,13 @@ Use this link to try the project : https://leoncik.github.io/LeonardWojcik_11_16
 
 ## Installation
 
-1. Clone this repository or fork It.
+1. Get this repository's content by [direct download](https://github.com/leoncik/LeonardWojcik_11_16052022/archive/refs/heads/main.zip) or by cloning It :
 
 ```sh
 git clone https://github.com/leoncik/LeonardWojcik_6_24112021
 ```
 
-2. Make sure that [Node.js](https://nodejs.org/en/) is installed on your machine and that you have a package manager (like [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)). Then install the dependencies.
+2. Make sure that [Node.js](https://nodejs.org/en/) is installed on your machine and that you have a package manager (like [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)). Then install the dependencies :
 
 ```sh
 yarn install
@@ -62,11 +62,12 @@ yarn install
 
 Run `yarn start` to launch a dev server and work on the project.
 
-You can learn more about the available scripts in the official Creatte React App documentation : https://create-react-app.dev/docs/available-scripts/.
+You can learn more about the available scripts in the official Create React App documentation : https://create-react-app.dev/docs/available-scripts/.
 
 ### Use the tests
 
 To run and watch the tests in the console, run : `yarn test`.
+
 To watch the test coverage in the console, run : `yarn test -- --coverage`.
 
 [⬆ Back to top](#kasa)
