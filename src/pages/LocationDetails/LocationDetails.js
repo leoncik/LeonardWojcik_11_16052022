@@ -32,7 +32,11 @@ const LocationDetails = () => {
 				</div>
 				<div className={classes['host-info']}>
 					<Host host={currentLocation.host} />
-					<div className={classes['rating-container']}>
+					<div
+						className={classes['rating-container']}
+						role="img"
+						aria-label={`Note de la location : ${currentLocation.rating} sur ${maximumRateValue}`}
+					>
 						{maximumRateArray.map((currentStar) => (
 							<StarRate
 								key={currentStar}
