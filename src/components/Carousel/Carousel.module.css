@@ -44,6 +44,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	color: white;
+	text-shadow: 1px 1px 2px black;
 	z-index: 1;
 }
 
@@ -81,27 +82,39 @@
 	transform: scale(1.4);
 }
 
-.image-position {
-	text-shadow: 1px 1px 2px black;
-}
-
 @media all and (max-width: 750px) {
 	.location-carousel {
 		height: 255px;
 	}
 
+	.next-image,
+	.previous-image {
+		height: 100%;
+	}
+
+	.next-image {
+		right: 0px;
+	}
+	.previous-image {
+		left: 0px;
+	}
+
 	.previous-image > svg,
 	.next-image > svg {
-		transform: scale(0.6);
+		transform: scale(0.4);
 	}
 
 	.previous-image:hover > svg,
 	.next-image:hover > svg {
-		transform: scale(0.8);
+		transform: scale(0.5);
 	}
 
 	.previous-image:active > svg,
 	.next-image:active > svg {
-		transform: scale(1);
+		transform: scale(0.6);
+	}
+
+	.image-position {
+		display: none;
 	}
 }

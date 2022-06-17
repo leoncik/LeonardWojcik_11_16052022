@@ -3,11 +3,12 @@
 .error404-container {
 	text-align: center;
 	color: rgba(255, 96, 96, 1);
+	margin-top: 174px;
 }
 
 .error404-container h1 {
-	font-size: 288px;
-	margin-top: 174px;
+	margin-top: 0;
+	font-size: 18rem;
 	margin-bottom: 66px;
 }
 
@@ -28,12 +29,18 @@
 @media all and (max-width: 750px) {
 	.error404-container {
 		margin: var(--mobile-margin);
+		margin-top: 150px;
 	}
 	.error404-container h1 {
-		font-size: 5rem;
+		font-size: 6rem;
 	}
 
 	.error404-container p {
-		font-size: 1.4rem;
+		font-size: var(--fs-mobile-large);
+		margin-bottom: 150px;
+	}
+
+	.error404-container a {
+		font-size: var(--fs-desktop-small);
 	}
 }

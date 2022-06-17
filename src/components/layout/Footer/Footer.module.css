@@ -4,15 +4,17 @@
 	width: 100%;
 	background-color: black;
 	text-align: center;
-	padding: 25px 0;
+	padding: 66px 0 29px 0;
 }
 
 .main-footer p {
 	color: white;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 
 .main-footer svg {
-	width: 156px;
+	height: 39px;
 }
 
 .main-footer path {
@@ -22,6 +24,7 @@
 @media all and (max-width: 750px) {
 	.main-footer {
 		margin-top: 25px;
+		padding: 62px 0;
 	}
 	.main-footer p {
 		font-size: var(--fs-mobile-medium);

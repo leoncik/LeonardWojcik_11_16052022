@@ -18,7 +18,7 @@
 }
 
 .header svg {
-	width: 210px;
+	height: 62px;
 }
 
 .header ul {
@@ -46,11 +46,17 @@
 	}
 
 	.header svg {
-		width: 145px;
+		height: 43px;
 	}
 }
 
 @media all and (max-width: 425px) {
+	.header ul {
+		gap: 10px;
+	}
+}
+
+@media all and (max-width: 330px) {
 	.header {
 		flex-direction: column;
 	}
