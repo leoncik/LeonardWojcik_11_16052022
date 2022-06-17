@@ -63,6 +63,7 @@
 	left: 12px;
 	bottom: 12px;
 	font-size: var(--fs-desktop-medium);
+	font-weight: var(--font-weight-normal);
 	color: white;
 	z-index: 3;
 }

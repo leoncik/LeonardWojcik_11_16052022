@@ -19,11 +19,13 @@
 .location-primary-info h1 {
 	margin-top: 0;
 	font-size: var(--fs-desktop-larger);
+	font-weight: var(--font-weight-normal);
 	margin-bottom: 0;
 }
 .location-primary-info h2 {
 	margin-top: 0;
 	font-size: var(--fs-desktop-medium);
+	font-weight: var(--font-weight-normal);
 	margin-bottom: 23px;
 }
 

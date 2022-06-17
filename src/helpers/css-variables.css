@@ -17,4 +17,7 @@
 	--fs-mobile-medium: 0.75rem;
 	--fs-mobile-large: 1.125rem;
 	--fs-mobile-xlarge: 1.5rem;
+
+	--font-weight-normal: 500;
+	--font-weight-thin: 400;
 }

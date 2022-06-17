@@ -17,6 +17,8 @@
 
 .main-banner h1 {
 	color: white;
+	font-style: normal;
+	font-weight: var(--font-weight-normal);
 }
 
 @media all and (max-width: 750px) {

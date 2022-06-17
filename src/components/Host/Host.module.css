@@ -9,6 +9,7 @@
 
 .host-profile p {
 	text-align: right;
+	font-weight: var(--font-weight-normal);
 }
 
 .host-profile img {
